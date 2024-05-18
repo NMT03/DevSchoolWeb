@@ -80,21 +80,28 @@
                         font-size: 1em;
 
                         .inner-title{
-                            font-size: 1em;
+                            font-size: 1.2em;
                             font-weight: 600;
-                            background-color: rgb(2, 0, 123);
                         }
 
                         .inner-content{
                             font-size: 1em;
                             text-align: justify;
-                            padding: 0.25% 2%;
-                            background-color: burlywood;
+                            padding: 1% 2%;
                         }
                     }
                 }
             }
 
+            .icon-star{
+                color: rgb(255, 255, 0);
+            }
+            .icon-heart{
+                color: rgb(255, 72, 133);
+            }
+            .icon-fire{
+                color: rgb(255, 191, 88)
+            }
 		}
 	}
 

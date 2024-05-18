@@ -12,10 +12,10 @@ function Container() {
 				<img alt="righticon" src={HVNICON}></img>
 			</div>
 			<div className="container-body">
-				<Context type="para"></Context>
-				<Context type="para"></Context>
-				<Context type="para"></Context>
-				<Context type="para"></Context>
+				<Context type="para" icon="star"></Context>
+				<Context type="para" icon="heart"></Context>
+				<Context type="para" icon="fire"></Context>
+				<Context type="para" icon="star"></Context>
 			</div>
 		</div>
 	);
