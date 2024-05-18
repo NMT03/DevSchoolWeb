@@ -6,7 +6,7 @@ class logincontroller {
   //login
   index(req, res) {
     res.cookie("token_", "");
-    // res.render("login");
+    res.json("Hello");
   }
 
   async login(req, res) {
