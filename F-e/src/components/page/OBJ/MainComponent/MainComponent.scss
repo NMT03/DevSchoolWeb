@@ -10,11 +10,12 @@
 	$containerResult_maxHeight: 80%;
 	$infoObjForm_backgroundColor: rgb(245, 245, 255);
 	$infoObjForm_tableSpace: calc(var(--fontsize));
-	$infoObjForm_advanced_navbarBtn_backgroundColor: rgb(80, 205, 255);
+	$infoObjForm_advanced_navbarBtn_backgroundColor: rgb(42, 113, 255);
 	$container-child--row-child_maxHeight: 10vw;
 	$container-child--row-child__space: calc(var(--fontsize) / 2.5);
 	$box-text__more_backgroundColor: rgba(207, 207, 207, 0.5);
 	$box-text__more_textColor: rgb(55, 30, 255);
+	$infoObjFormReturn_backgroundColor: rgb(255, 155, 25);
 
 	font-size: var(--fontsize);
 	.UPDATELATER{
@@ -36,11 +37,28 @@
 			justify-content: space-between;
 			align-items: center;
 
-			width: 30%;
+			width: 35%;
 			padding: 1% 0;
 
+			.headerIcon{
+				position: relative;
+				width: 5%;
+				padding: 1% 3%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(9, 0, 79);
+				color: var(--textcolor2);
+				border-radius: 0.5vw;
+				margin-right: 1em;
+				font-size: 1em;
+				svg{
+					font-size: 1em;
+				}
+			}
+
 			.input_form {
-				width: 70%;
+				width: 67.5%;
 				height: 100%;
 				border-radius: 0.2vw;
 				border: 0.1vw solid black;
@@ -66,12 +84,13 @@
 
 			.filter {
 				font-size: $inputFontSize;
-				width: 25%;
+				width: 22.5%;
 				color: var(--textcolor2);
 				background-color: $filterBoxs_backgroundColor;
 				padding: 1% 2%;
 				text-wrap: nowrap;
 				border-radius: 0.2vw;
+				margin-left: 1em;
 			}
 
 			#filterPannel {
@@ -87,6 +106,7 @@
 				color: var(--textcolor2);
 				padding: 2% 2%;
 				box-shadow: $boxShadow;
+				z-index: 1;
 
 				.contain_acceptFilter {
 					display: flex;
@@ -265,6 +285,17 @@
 		background-color: $infoObjForm_backgroundColor;
 		font-size: 1em;
 
+		#infoObjFormReturn{
+			position: relative;
+			font-size: 0.8em;
+			font-weight: 300;
+			background-color: $infoObjFormReturn_backgroundColor;
+			color: var(--textcolor2);
+			padding: 0.25% 1%;
+			border-radius: 0.2vw;
+			margin-top: 1em;
+		}
+
 		.container {
 			position: relative;
 			width: 80%;
@@ -352,9 +383,12 @@
 		#container-advanced {
 			font-size: 1em;
 			.container-left{
+				position: relative;
+				height: max-content;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				justify-content: center;
 				padding: calc(var(--fontsize)) 1%;
 
 				p{
@@ -362,23 +396,32 @@
 				}
 
 				a{
+					position: relative;
+					width: 50%;
+					display: flex;
+					align-items: center;
 					font-size: 1.1em;
+					text-align: justify;
 
 					svg{
-						margin-right: calc(var(--fontsize) / 2);
+						width: 25%;
 					}
 				}
 
 				a + a{
-					margin-top: 0.5em;
+					margin-top: 0.25em;
 				}
 
 				.fb{
-					color: blue;
+					color: rgb(0, 0, 0);
 				}
 
 				.ins{
-					color: rgb(118, 92, 205)
+					color: rgb(0, 0, 0);
+				}
+
+				.email{
+					color: rgb(0, 0, 0);
 				}
 			}
 

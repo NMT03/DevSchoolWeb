@@ -11,6 +11,8 @@
 
     $paraContainer-title_backgroundColor: rgb(0, 0, 250);
     $paraContainerChild_backgroundColor: rgb(245, 246, 255);
+    $paraContainer-innerTitle_backgroundColor: rgb(250, 230, 200);
+    $paraContainer-innerContent_backgroundColor: rgb(255, 245, 240);
 
 	.Introduce-container {
 		position: relative;
@@ -72,25 +74,44 @@
                 }
                 .content{
                     font-size: 0.8em;
-                    padding-bottom: 2em;
+                    padding-bottom: 1em;
                     background-color: $paraContainerChild_backgroundColor;
+                    box-shadow: var(--boxShadow);
 
                     .para-child{
                         padding: 0.5% 2%;
                         font-size: 1em;
-
+                        
                         .inner-title{
                             font-size: 1.2em;
                             font-weight: 600;
+                            padding: 0.25% 2%;
+
+                            background-color: $paraContainer-innerTitle_backgroundColor;
                         }
 
                         .inner-content{
                             font-size: 1em;
                             text-align: justify;
                             padding: 1% 2%;
+                            background-color: $paraContainer-innerContent_backgroundColor;
+
+                            .lineData{  
+                                line-height: 2em;
+                                font-weight: 400;
+                                color: var(--textcolor1)
+                            }
+
+                            .lineData + .lineData{
+                                margin-top: 1em;
+                            }
                         }
                     }
                 }
+            }
+
+            .innericon{
+                margin-left: 0.25em;
             }
 
             .icon-star{
